@@ -9,3 +9,4 @@ Running MongoDb Server :
 4) find db : db
 5) switch to or create DB : use 'bikers-pro'
 6) See all the collections : show collections
+7) See the data inside a collection : db.collection.find()
