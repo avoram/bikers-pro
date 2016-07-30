@@ -13,5 +13,5 @@ Running MongoDb Server :
 8) Push Data into collection : db.collection.insert({'name','ABC'}) </br>
 9) Add a new field in existing collection : </br>
             db.your_collection.update({},{$set : {"new_field":1}},{upsert:false,multi:true}) </br>
-10) 10. Update a existing recording in collection : <br>
+10) Update a existing recording in collection : <br>
 db.your_collection.update({"_id" :ObjectId("4e93037bbf6f1dd3a0a9541a") },{$set : {"new_field”:”new_value”}})
