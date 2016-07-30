@@ -1,10 +1,12 @@
 var express = require('express'),
   app = express(),
   bodyParser = require('body-parser'),
-  mongoose = require('mongoose'),
+//  mongoose = require('mongoose'),
   serviceProvidersController = require('./server/controllers/service-provider-controller');
 
-mongoose.connect('mongodb://localhost:27017/bikers-pro');
+//mongoose.connect('mongodb://localhost:27017/bikers-pro');
+
+app.set('port', (process.env.PORT || 5000));
 
 //Using Middleware of Express
 app.use(bodyParser());
@@ -28,6 +30,10 @@ app.use('/css', express.static(__dirname + '/www/css'));
 // app.post('/api/saveUserJourneyPath', locationStorageController.create);
 app.get('/api/serviceProvider', serviceProvidersController.serviceProvidersList);
 
-app.listen(3000, function() {
-  console.log('I am listing at port 3000');
+// app.listen(3000, function() {
+//   console.log('I am listing at port 3000');
+// });
+
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
 });
