@@ -12,6 +12,7 @@ app.set('port', (process.env.PORT || 5000));
 app.use(bodyParser());
 
 app.get('/', function(req, res) {
+  console.log('Came to Root');
   res.sendFile(__dirname + '/www/index.html');
 });
 
