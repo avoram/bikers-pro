@@ -24,7 +24,7 @@ Using Heroku : (Cloud Based Application hosting Platform)
 
 Tutorial : https://www.youtube.com/watch?v=AZNFox2CvBk <br>
 
-1. Pushing Changes :
+1. Pushing Changes : <br>
 	git add .
 	git commit -m “Commit Message”
 	git push heroku master - First Time or from master
