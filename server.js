@@ -1,10 +1,14 @@
 var express = require('express'),
   app = express(),
   bodyParser = require('body-parser'),
-//  mongoose = require('mongoose'),
+  mongoose = require('mongoose'),
   serviceProvidersController = require('./server/controllers/service-provider-controller');
 
 //mongoose.connect('mongodb://localhost:27017/bikers-pro');
+// mongoose.connect('mongodb://<dbuser>:<dbpassword>@ds031865.mlab.com:31865/bikers-pro');
+
+//Connecting to mongo Lab
+mongoose.connect('mongodb://bikers-pro:bikers@ds031865.mlab.com:31865/bikers-pro');
 
 app.set('port', (process.env.PORT || 5000));
 

@@ -5,4 +5,4 @@ var mongoose = require('mongoose');
 
 module.exports = mongoose.model("Model", {
   name: String
-}, "serviceProviders");
+}, "serviceProvidersList"); //Last Argument is name of collection
