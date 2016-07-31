@@ -31,6 +31,6 @@ Tutorial : https://www.youtube.com/watch?v=AZNFox2CvBk <br>
 	git push heroku yourbranch:master - If working on other branch like dev-vora
 
 2. Run Local : heroku local web <br>
-	Run Application : heroku open
+	Run Application : heroku open <br>
 
    3. See logs :  heroku logs --tail
