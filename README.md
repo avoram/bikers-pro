@@ -30,7 +30,7 @@ Tutorial : https://www.youtube.com/watch?v=AZNFox2CvBk <br>
 	git push heroku master - First Time or from master
 	git push heroku yourbranch:master - If working on other branch like dev-vora
 
-2. Run Local : heroku local web
+2. Run Local : heroku local web <br>
 	Run Application : heroku open
 
    3. See logs :  heroku logs --tail
