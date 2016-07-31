@@ -2,14 +2,23 @@
   "name": "myapp",
   "version": "1.1.1",
   "description": "myApp: An Ionic project",
+  "engines": {
+    "node": "5.9.1"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
   "dependencies": {
     "body-parser": "^1.15.2",
+    "ejs": "2.4.1",
     "express": "^4.14.0",
     "gulp": "^3.5.6",
     "gulp-concat": "^2.2.0",
     "gulp-minify-css": "^0.3.0",
     "gulp-rename": "^1.2.0",
     "gulp-sass": "^2.0.4",
+    "mongodb": "^2.2.5",
     "mongoose": "^4.5.5"
   },
   "devDependencies": {
@@ -17,6 +26,16 @@
     "gulp-util": "^2.2.14",
     "shelljs": "^0.3.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/avoram/bikers-pro"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT",
   "cordovaPlugins": [
     "cordova-plugin-device",
     "cordova-plugin-console",
