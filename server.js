@@ -2,6 +2,7 @@ var express = require('express'),
   app = express(),
   bodyParser = require('body-parser'),
   mongoose = require('mongoose'),
+  cors = require('cors'),
   serviceProvidersController = require('./server/controllers/service-provider-controller');
 
 //mongoose.connect('mongodb://localhost:27017/bikers-pro');
@@ -14,6 +15,8 @@ app.set('port', (process.env.PORT || 5000));
 
 //Using Middleware of Express
 app.use(bodyParser());
+
+app.use(cors());
 
 app.get('/', function(req, res) {
   console.log('Came to Root');

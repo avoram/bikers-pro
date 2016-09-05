@@ -31,6 +31,14 @@ Tutorial : https://www.youtube.com/watch?v=AZNFox2CvBk <br>
 	git push heroku yourbranch:master - If working on other branch like dev-vora
 
 2. Run Local : heroku local web <br>
-	Run Application : heroku open
+	 Run Application : heroku open <br>
 
    3. See logs :  heroku logs --tail
+
+Allow Cors :
+
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});   
